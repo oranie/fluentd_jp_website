@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="fluentd, log collector, log aggregator, ruby, JSON logging" />
+  <meta name="description" content="Fluentd is a log collector daemon written in Ruby. Fluentd receives logs as JSON streams, buffers them, and sends them to other systems like MySQL, MongoDB, or even other instances of Fluentd." />
+  <meta name="google-site-verification" content="y_tydIQd6TZaoY-qR9geJSDX95h10_w4CXL6NznjgdI" />
+  <meta name="msvalidate.01" content="FA8C6A3FF6ADEE726950F238947D5295" />
+  <title>Fluentd: Log Everything in JSON</title>
+  <link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+  <script type="text/javascript" src="js/responsed.js" ></script>
+  <script type="text/javascript" src="js/all-mobile.js" ></script>
+  <!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js" ></script><![endif]-->
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(d,c){var a,b,g,e;a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===d.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';b=d.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);c._i=[];c.init=function(a,d,f){var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";g="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config".split(" ");for(e=0;e<g.length;e++)(function(a){b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}})(g[e]);c._i.push([a,d,f])};window.mixpanel=c})(document,[]);mixpanel.init("fcc682ea19e6d9f21250083a377de6f4");
+    mixpanel.track("ViewTop");
+    mixpanel.track_links('div.link-holder a', 'ClickInstall', function(link) {
+        console.log(link);
+        return {
+          install_url: link.href
+        };
+    }); 
+  </script>
+  <!-- end Mixpanel -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <meta property="fb:admins"      content="588883490,100000237607356,741094668" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Fluentd: Log Everything in JSON" />
+  <meta property="og:description" content="Fluentd is a log collector daemon written in Ruby. Fluentd receives logs as JSON streams, buffers them, and sends them to other systems like MySQL, MongoDB, or even other instances of Fluentd." />
+  <meta property="og:url"         content="http://fluentd.org/" />
+  <meta property="og:image"       content="http://fluentd.org/logos/fluentd.png" />
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Mixpanel-->
+<script>
+</script>
+<!--end Mixpanel-->
+  <a href="http://github.com/fluent/fluentd" class="btn-github">Fork me on GitHub</a>
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="logo"><a href="/">Fluentd</a></h1>
+      <div class="top-holder">
+        <ul>
+          <li><a href="http://fluentd.org/doc">Documentation</a></li>
+          <li><a href="http://community.fluentd.org/browse/help-center/">KnowledgeBase</a></li>
+          <li><a href="http://fluentd.org/plugin/">Plugins</a></li>
+          <li><a href="http://groups.google.com/group/fluentd">MailingList</a></li>
+          <li><a href="https://github.com/fluent/fluentd/issues">Bug Tracker</a></li>
+          <li><a href="http://github.com/fluent/fluentd">Source</a></li>
+          <li><a href="https://github.com/fluent/website/tree/master/logos">Logos</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="main">
+      <div class="main-holder">
+        <img src="images/txt-type.png" width="436" height="280" alt="image description" class="txt-type" />
+        <section class="text-holder">
+          <h2>Log everything in <span>JSON</span></h2>
+          <a href="http://fluentd.org/doc/install.html" class="btn-look">Get Started</a>
+        </section>
+      </div>
+      <div class="text-box">
+        <p>Fluentd is a log collector daemon written in Ruby. Fluentd receives logs as JSON streams, buffers them, and sends them to other systems like MySQL, MongoDB, or even other instances of Fluentd.</p>
+      </div>
+      <div class="link-holder">
+        <div class="box">
+          <span class="btn-install">Install Fluentd</span>
+        </div>
+        <a href="http://help.treasure-data.com/kb/installing-td-agent-daemon/installing-td-agent-for-redhat-and-centos" class="btn">RPM package (.rpm)</a>
+        <a href="http://help.treasure-data.com/kb/installing-td-agent-daemon/installing-td-agent-for-debian-and-ubuntu" class="btn">Debian package (.deb)</a>
+        <a href="http://rubygems.org/gems/fluentd" class="btn">gem install fluentd</a>
+      </div>
+      <section class="testimonials-holder">
+        <div class="heading">
+          <h3><span><strong>What People say about Fluentd</strong></span></h3>
+        </div>
+        <div class="column-holder">
+          <div class="column">
+            <img class="logo-image" src="images/user_logo/ContextLogic.png" height="60"/>
+            <p class="testimonial-text">
+              "We started using Fluentd from early on to collect user event data.
+              Its reliability and ease of use from application code (Python for us)
+              make it easy for us to keep track of the key metrics."
+            <br/>
+            <p class="testimonial-author">Danny Zhang</p>
+            <p class="testimonial-author">co-founder</p>
+            </p>
+          </div>
+          <div class="column">
+            <img class="logo-image" src="images/user_logo/Slideshare.png" height="60"/>
+            <p class="testimonial-text">
+              "Slideshare uses Fluentd to stream logs and events in the cloud.
+              We were looking for a versatile yet lightweight logger in Ruby, and Fluentd fit the bill perfectly."
+            <br/>
+            <p class="testimonial-author">Sylvain Kalache</p>
+            <p class="testimonial-author">Operations Engineer</p>
+            </p>
+          </div>
+          <div class="column">
+            <img class="logo-image" src="images/user_logo/Viki.png" height="60"/>
+            <p class="testimonial-text">
+            "At Viki, we use Fluentd deployed on Heroku to collect analytics events from various apps which then go into Treasure Data and in-house Hadoop Cluster for analysis. Fluentd integrates seamlessly with Heroku, and we've been impressed with its versatility and reliability."
+            <p class="testimonial-author">Abhishek Parolkar</p>
+            <p class="testimonial-author">BigData Infrastructure Manager</p>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+     <span class="social-buttons">
+       <div class="fb-like" data-href="http://fluentd.org/" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false"></div>
+       <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+       <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=fluent&repo=fluentd&type=watch&count=true"
+           allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+       <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=fluent&repo=fluentd&type=fork&count=true"
+           allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+     </span>
+
+      <span class="copy">The Fluentd Project is sponsored by <img src="images/td-square-icon.png" width="20px"/> <a href="http://treasure-data.com/?source=fl">Treasure Data, Inc.</a></span>
+    </footer>
+  </div>
+</body>
+</html>
